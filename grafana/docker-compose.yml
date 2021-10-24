@@ -1,0 +1,61 @@
+version: "3"
+services:
+   Grafana:
+     container_name: Grafana_server
+     restart: always
+     image: grafana/grafana
+     ports:
+       - "3000:3000"
+     environment:
+        GF_INSTALL_PLUGINS: grafana-clock-panel,grafana-simple-json-datasource
+     volumes:
+       - "Grafana_data:/var/lib/grafana"
+       - "/etc/localtime:/etc/localtime:ro"
+     networks:
+       - net
+   Prometheus:
+     container_name: Prometheus_server
+     restart: always
+     image: prom/prometheus
+     ports: 
+        - "9090:9090"
+     volumes:
+        - "Prometheus_data:/etc/prometheus"
+        - "/etc/localtime:/etc/localtime:ro"
+#        - "/home/jenkins/prometheus_data/:/etc/prometheus/"
+     networks:
+        - net
+   NodeExporter:
+     container_name: Noder
+     restart: always
+     image: prom/node-exporter
+     ports: 
+        - "9100:9100"
+     #volumes:
+     #   - "Prometheus_data:/etc/prometheus"
+     networks:
+        - net
+   Influx:
+     container_name: Influx_server
+     restart: always
+     image: influxdb
+     environment:
+       DOCKER_INFLUXDB_INIT_MODE: upgrade 
+       DOCKER_INFLUXDB_INIT_USERNAME: influx
+       DOCKER_INFLUXDB_INIT_PASSWORD: influx
+       DOCKER_INFLUXDB_INIT_ORG: neo 
+       DOCKER_INFLUXDB_INIT_BUCKET: neo-bucket
+     ports:
+        - "8086:8086"
+     volumes:
+        - "Influx_data:/var/lib/influxdb"
+     #          networks:
+     #                  - net
+     #
+
+networks:
+    net:
+volumes:
+    Grafana_data:
+    Prometheus_data:
+    Influx_data:

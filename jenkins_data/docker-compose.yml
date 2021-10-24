@@ -1,0 +1,45 @@
+version: "3"
+services:
+   jenkins:
+     container_name: jenkins-server
+     image: jenkins/jenkins:lts
+     ports:
+       - "8080:8080"
+     volumes:
+       - "$PWD/jenkins_home:/var/jenkins_home"
+       - "$PWD/test.sh:/tmp/test.sh"
+     networks:
+       - net
+   centos:
+     container_name: jenkins_node1
+     image: centos_custom
+     build:
+       context: centos8
+     networks:
+       - net
+   mysql:
+     container_name: jenkins_mysql
+     image: mysql:5.7
+     environment:
+          MYSQL_ROOT_PASSWORD: jaihind
+          MYSQL_USER: jai
+          MYSQL_PASSWORD: jai 
+          MYSQL_DATABASE: Demo
+     volumes:
+       - "$PWD/mysql_data:/var/lib/mysql"
+     networks:
+       - net
+   gitlube:
+     image: 'gitlab/gitlab-ce:latest'
+     hostname: 'www.gitlube.com'
+     ports:
+       - '8040:80'
+     volumes:
+       - '$PWD/config:/etc/gitlab'
+       - '$PWD/logs:/var/log/gitlab'
+       - '$PWD/data:/var/opt/gitlab'
+     networks:
+       - net
+ 
+networks:
+    net:

@@ -1,0 +1,8 @@
+Started by user [8mha:////4ClGqcuESaByE/TqXRMJfmVw0/VXuvvGOvluyhIOwslCAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgZe/dLi1CL9rMTMjMy8FAA0hkO6wgAAAA==[0mjaihind nishad
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/test
+[8mha:////4I4HzDtgqN4REZWulivi7SqP8i31xDsCQwD0VBtO16EMAAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGFVNzc4sUE3Nz3eSkFCNdE6NEC11LMyML3aSkJAtLc7OUZFMzSwA3kDOmrwAAAA==[0m[test] $ /bin/sh -xe /tmp/jenkins8174813230823579558.sh
++ echi Execiting script
+/tmp/jenkins8174813230823579558.sh: 2: /tmp/jenkins8174813230823579558.sh: echi: not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,36 @@
+version: "3"
+services:
+   WP:
+     container_name: WP_server
+     image: wordpress
+     ports:
+       - "8099:80"
+     depends_on:
+       - mysql
+     volumes:
+       - "$PWD/WP_data:/var/www/html"
+     environment:
+          WORDPRESS_DB_HOST: WP_mysql
+          WORDPRESS_DB_USER: wordpress
+          WORDPRESS_DB_PASSWORD: wordpress
+          WORDPRESS_DB_NAME: wordpress
+          WORDPRESS_TABLE_PREFIX: wp_
+     networks:
+       - net
+   mysql:
+     container_name: WP_mysql
+     image: mysql:5.7
+#     ports: 
+#       - "3306:3306"
+     environment:
+          MYSQL_ROOT_PASSWORD: root
+          MYSQL_USER: wordpress
+          MYSQL_PASSWORD: wordpress
+          MYSQL_DATABASE: wordpress
+     volumes:
+       - "$PWD/mysql_data:/var/lib/mysql"
+     networks:
+       - net
+networks:
+    net:
+

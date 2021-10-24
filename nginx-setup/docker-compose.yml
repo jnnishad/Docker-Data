@@ -1,0 +1,24 @@
+version: "3"
+services:
+   nginx:
+     container_name: nginx-server1
+     image: nginx:latest
+     restart: always
+     ports:
+       - "80:80"
+     volumes:
+       - "$PWD/data:/usr/share/nginx/html"
+       - "$PWD/conf:/etc/nginx/conf.d"
+   nginx-node:
+     container_name: nginx-server2
+     image: nginx:latest
+     restart: always
+     ports:
+       - "90:80"
+   nginx-node2:
+     container_name: nginx-server3
+     image: nginx:latest
+     restart: always
+     ports:
+       - "91:80"
+

@@ -1,0 +1,38 @@
+version: "3"
+services:
+   Grafana:
+     container_name: Grafana_server
+     image: grafana/grafana
+     ports:
+       - "3000:3000"
+     environment:
+        GF_INSTALL_PLUGINS: grafana-clock-panel,grafana-simple-json-datasource
+     volumes:
+       - "Grafana_data:/var/lib/grafana"
+     networks:
+       - net
+   Prometheus:
+     container_name: Prometheus_server
+     image: prom/prometheus
+     ports: 
+        - "9090:9090"
+     volumes:
+        - "Prometheus_data:/etc/prometheus"
+        - "/etc/localtime:/etc/localtime:ro"
+     networks:
+        - net
+   NodeExporter:
+     container_name: Noder
+     image: prom/node-exporter
+     ports: 
+        - "9100:9100"
+     #volumes:
+     #   - "Prometheus_data:/etc/prometheus"
+     networks:
+        - net
+
+networks:
+    net:
+volumes:
+    Grafana_data:
+    Prometheus_data:

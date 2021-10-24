@@ -1,0 +1,12 @@
+Started by user [8mha:////4ClGqcuESaByE/TqXRMJfmVw0/VXuvvGOvluyhIOwslCAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgZe/dLi1CL9rMTMjMy8FAA0hkO6wgAAAA==[0mjaihind nishad
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/test
+[8mha:////4CxXsKtP9n/vuOge0EBlVfR9M3nEqFY/oYV2ArmV0Z9YAAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGlWRzk9S0RCMT3cRUIwtdk6RES92k5KQk3cSkxBTjpGQTo8Q0YwCkYDDLrwAAAA==[0m[test] $ /bin/sh -xe /tmp/jenkins2937649414520957024.sh
++ echo Execiting script
+Execiting script
++ bash /tmp/test.sh john ricardo list1
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
+john and ricardo is passed
+ list1 is selected 
+Finished: SUCCESS

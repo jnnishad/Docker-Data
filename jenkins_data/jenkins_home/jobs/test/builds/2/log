@@ -1,0 +1,10 @@
+Started by user [8mha:////4ClGqcuESaByE/TqXRMJfmVw0/VXuvvGOvluyhIOwslCAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgZe/dLi1CL9rMTMjMy8FAA0hkO6wgAAAA==[0mjaihind nishad
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/test
+[8mha:////4Efv0FADqkl6eOKCM5XoySBNDq+oMxj8EW9r1xCTZA5mAAAAqx+LCAAAAAAAAP9b85aBtbiIQSujNKU4P0+vIKc0PTOvWC8xrzgzOT8nv0gvMbkkEyjhCKb88ktSdwVsu2efuqidiYHRh4EDIu2ZUsIg5JOVWJaon5OYl64fXFKUmZduXVHEIAU1ODk/rzg/J1XPGUKDDGKAAEYmBoaKghIGlSQL4xSDxGRTXWNjQzNdE4vUFF2LNBNL3VQzI1MDUzPDxBRLcwA2e8kVrwAAAA==[0m[test] $ /bin/sh -xe /tmp/jenkins388146455905298765.sh
++ echo Execiting script
+Execiting script
++ /tmp/test.sh john ricardo list1
+/tmp/jenkins388146455905298765.sh: 3: /tmp/jenkins388146455905298765.sh: /tmp/test.sh: Permission denied
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

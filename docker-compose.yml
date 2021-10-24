@@ -1,0 +1,33 @@
+version: "3"
+services:
+   WP:
+     container_name: WP_server
+     image: wordpress
+     ports:
+       - "8099:80"
+     depends_on:
+       - mysql
+     volumes:
+       - "$PWD/WP_data:/var/www/html"
+     environment:
+          JHOOMLA_DB_SERVER: PS_mysql
+          JHOOMLA_DB_NAME: ps
+          JHOOMLA_DB_USER: ps
+          JHOOMLA_DB_PASSWORD: ps
+     networks:
+       - net
+   mysql:
+     container_name: WP_mysql
+     image: mysql:5.7
+     environment:
+          MYSQL_ROOT_PASSWORD: root
+          MYSQL_USER: wp
+          MYSQL_PASSWORD: wp
+          MYSQL_DATABASE: wp
+     volumes:
+       - "$PWD/mysql_data:/var/lib/mysql"
+     networks:
+       - net
+networks:
+    net:
+

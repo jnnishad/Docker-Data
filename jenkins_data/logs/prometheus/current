@@ -1,0 +1,42 @@
+2021-05-03_21:00:00.97131 level=info ts=2021-05-03T21:00:00.964Z caller=compact.go:507 component=tsdb msg="write block" mint=1620064800379 maxt=1620072000000 ulid=01F4T0FPS2WDREN9PGCGPZ2WQB duration=290.067773ms
+2021-05-03_21:00:00.97723 level=info ts=2021-05-03T21:00:00.976Z caller=head.go:847 component=tsdb msg="Head GC completed" duration=9.627096ms
+2021-05-03_23:00:00.80050 level=info ts=2021-05-03T23:00:00.799Z caller=compact.go:507 component=tsdb msg="write block" mint=1620072000372 maxt=1620079200000 ulid=01F4T7BDVSHB51BF5C33GGCGJQ duration=293.804844ms
+2021-05-03_23:00:00.81181 level=info ts=2021-05-03T23:00:00.810Z caller=head.go:847 component=tsdb msg="Head GC completed" duration=9.976601ms
+2021-05-03_23:00:00.82001 level=info ts=2021-05-03T23:00:00.819Z caller=checkpoint.go:95 component=tsdb msg="Creating checkpoint" from_segment=22 to_segment=23 mint=1620079200000
+2021-05-03_23:00:01.48727 level=info ts=2021-05-03T23:00:01.487Z caller=head.go:944 component=tsdb msg="WAL checkpoint complete" first=22 last=23 duration=667.545652ms
+2021-05-03_23:00:02.11814 level=info ts=2021-05-03T23:00:02.117Z caller=compact.go:448 component=tsdb msg="compact blocks" count=3 mint=1620043200372 maxt=1620064800000 ulid=01F4T7BETFFGEFQVPDTEFF34R6 sources="[01F4SBWH16YMX9Z3V49T2BDFRY 01F4SJR89BHB7ZEJYDRQEHAR5N 01F4SSKZH1P7N82QYBFVE0EVSK]" duration=629.780945ms
+2021-05-03_23:00:02.12440 level=info ts=2021-05-03T23:00:02.124Z caller=db.go:1212 component=tsdb msg="Deleting obsolete block" block=01F4SBWH16YMX9Z3V49T2BDFRY
+2021-05-03_23:00:02.13045 level=info ts=2021-05-03T23:00:02.130Z caller=db.go:1212 component=tsdb msg="Deleting obsolete block" block=01F4SSKZH1P7N82QYBFVE0EVSK
+2021-05-03_23:00:02.13589 level=info ts=2021-05-03T23:00:02.135Z caller=db.go:1212 component=tsdb msg="Deleting obsolete block" block=01F4SJR89BHB7ZEJYDRQEHAR5N
+2021-05-03_23:00:03.53493 level=info ts=2021-05-03T23:00:03.530Z caller=compact.go:448 component=tsdb msg="compact blocks" count=3 mint=1620000000378 maxt=1620064800000 ulid=01F4T7BFERTVHN2PQ98Q750NTW sources="[01F4RY53G77J78HB5FRKFDVN10 01F4SJR8MKNYA0KMB9KHE46GJR 01F4T7BETFFGEFQVPDTEFF34R6]" duration=1.393947918s
+2021-05-03_23:00:03.55066 level=info ts=2021-05-03T23:00:03.550Z caller=db.go:1212 component=tsdb msg="Deleting obsolete block" block=01F4RY53G77J78HB5FRKFDVN10
+2021-05-03_23:00:03.56220 level=info ts=2021-05-03T23:00:03.562Z caller=db.go:1212 component=tsdb msg="Deleting obsolete block" block=01F4SJR8MKNYA0KMB9KHE46GJR
+2021-05-03_23:00:03.57661 level=info ts=2021-05-03T23:00:03.576Z caller=db.go:1212 component=tsdb msg="Deleting obsolete block" block=01F4T7BETFFGEFQVPDTEFF34R6
+2021-05-04_01:00:00.94535 level=info ts=2021-05-04T01:00:00.945Z caller=compact.go:507 component=tsdb msg="write block" mint=1620079200372 maxt=1620086400000 ulid=01F4TE75912VF90N5YRDNQF2BF duration=271.313751ms
+2021-05-04_01:00:00.95796 level=info ts=2021-05-04T01:00:00.957Z caller=head.go:847 component=tsdb msg="Head GC completed" duration=10.743273ms
+2021-05-04_03:00:00.96706 level=info ts=2021-05-04T03:00:00.963Z caller=compact.go:507 component=tsdb msg="write block" mint=1620086400374 maxt=1620093600000 ulid=01F4TN2WH2PTEXRG5N39B44WKY duration=289.359782ms
+2021-05-04_03:00:00.97801 level=info ts=2021-05-04T03:00:00.975Z caller=head.go:847 component=tsdb msg="Head GC completed" duration=9.225073ms
+2021-05-04_03:00:00.99290 level=info ts=2021-05-04T03:00:00.992Z caller=checkpoint.go:95 component=tsdb msg="Creating checkpoint" from_segment=24 to_segment=25 mint=1620093600000
+2021-05-04_03:00:01.70692 level=info ts=2021-05-04T03:00:01.706Z caller=head.go:944 component=tsdb msg="WAL checkpoint complete" first=24 last=25 duration=714.345953ms
+2021-05-04_05:00:00.84097 level=info ts=2021-05-04T05:00:00.839Z caller=compact.go:507 component=tsdb msg="write block" mint=1620093600372 maxt=1620100800000 ulid=01F4TVYKM9GHK096H5SJ8WNKCN duration=317.787381ms
+2021-05-04_05:00:00.84992 level=info ts=2021-05-04T05:00:00.849Z caller=head.go:847 component=tsdb msg="Head GC completed" duration=8.743787ms
+2021-05-04_05:00:01.50087 level=info ts=2021-05-04T05:00:01.500Z caller=compact.go:448 component=tsdb msg="compact blocks" count=3 mint=1620064800379 maxt=1620086400000 ulid=01F4TVYKYXK2BTSBZQP4JH4640 sources="[01F4T0FPS2WDREN9PGCGPZ2WQB 01F4T7BDVSHB51BF5C33GGCGJQ 01F4TE75912VF90N5YRDNQF2BF]" duration=639.111925ms
+2021-05-04_05:00:01.51007 level=info ts=2021-05-04T05:00:01.508Z caller=db.go:1212 component=tsdb msg="Deleting obsolete block" block=01F4T0FPS2WDREN9PGCGPZ2WQB
+2021-05-04_05:00:01.51417 level=info ts=2021-05-04T05:00:01.513Z caller=db.go:1212 component=tsdb msg="Deleting obsolete block" block=01F4T7BDVSHB51BF5C33GGCGJQ
+2021-05-04_05:00:01.51868 level=info ts=2021-05-04T05:00:01.518Z caller=db.go:1212 component=tsdb msg="Deleting obsolete block" block=01F4TE75912VF90N5YRDNQF2BF
+2021-05-04_07:00:01.06991 level=info ts=2021-05-04T07:00:01.066Z caller=compact.go:507 component=tsdb msg="write block" mint=1620100800378 maxt=1620108000000 ulid=01F4V2TB10KZD93X6SWJXFHM04 duration=394.087438ms
+2021-05-04_07:00:01.07857 level=info ts=2021-05-04T07:00:01.078Z caller=head.go:847 component=tsdb msg="Head GC completed" duration=9.750645ms
+2021-05-04_07:00:01.09031 level=info ts=2021-05-04T07:00:01.089Z caller=checkpoint.go:95 component=tsdb msg="Creating checkpoint" from_segment=26 to_segment=27 mint=1620108000000
+2021-05-04_07:00:01.77301 level=info ts=2021-05-04T07:00:01.772Z caller=head.go:944 component=tsdb msg="WAL checkpoint complete" first=26 last=27 duration=683.074461ms
+2021-05-04_09:00:00.96819 level=info ts=2021-05-04T09:00:00.967Z caller=compact.go:507 component=tsdb msg="write block" mint=1620108000416 maxt=1620115200000 ulid=01F4V9P292G94G2DTX3VRBJ87Z duration=293.114026ms
+2021-05-04_09:00:00.98148 level=info ts=2021-05-04T09:00:00.980Z caller=head.go:847 component=tsdb msg="Head GC completed" duration=10.405188ms
+2021-05-04_11:00:00.96238 level=info ts=2021-05-04T11:00:00.961Z caller=compact.go:507 component=tsdb msg="write block" mint=1620115200384 maxt=1620122400000 ulid=01F4VGHSH2MXH3502G1EWP2TQZ duration=287.224902ms
+2021-05-04_11:00:00.97538 level=info ts=2021-05-04T11:00:00.974Z caller=head.go:847 component=tsdb msg="Head GC completed" duration=10.90799ms
+2021-05-04_11:00:00.98702 level=info ts=2021-05-04T11:00:00.986Z caller=checkpoint.go:95 component=tsdb msg="Creating checkpoint" from_segment=28 to_segment=29 mint=1620122400000
+2021-05-04_11:00:01.65294 level=info ts=2021-05-04T11:00:01.652Z caller=head.go:944 component=tsdb msg="WAL checkpoint complete" first=28 last=29 duration=666.172821ms
+2021-05-04_11:00:02.28992 level=info ts=2021-05-04T11:00:02.285Z caller=compact.go:448 component=tsdb msg="compact blocks" count=3 mint=1620086400374 maxt=1620108000000 ulid=01F4VGHTFNPCG4SXZKN2RQ97ZS sources="[01F4TN2WH2PTEXRG5N39B44WKY 01F4TVYKM9GHK096H5SJ8WNKCN 01F4V2TB10KZD93X6SWJXFHM04]" duration=632.782519ms
+2021-05-04_11:00:02.29647 level=info ts=2021-05-04T11:00:02.294Z caller=db.go:1212 component=tsdb msg="Deleting obsolete block" block=01F4V2TB10KZD93X6SWJXFHM04
+2021-05-04_11:00:02.30277 level=info ts=2021-05-04T11:00:02.301Z caller=db.go:1212 component=tsdb msg="Deleting obsolete block" block=01F4TVYKM9GHK096H5SJ8WNKCN
+2021-05-04_11:00:02.30754 level=info ts=2021-05-04T11:00:02.307Z caller=db.go:1212 component=tsdb msg="Deleting obsolete block" block=01F4TN2WH2PTEXRG5N39B44WKY
+2021-05-04_13:00:00.79905 level=info ts=2021-05-04T13:00:00.798Z caller=compact.go:507 component=tsdb msg="write block" mint=1620122400372 maxt=1620129600000 ulid=01F4VQDGKVW1T0SNQDCSA9PRYP duration=290.534337ms
+2021-05-04_13:00:00.81102 level=info ts=2021-05-04T13:00:00.810Z caller=head.go:847 component=tsdb msg="Head GC completed" duration=10.400909ms
